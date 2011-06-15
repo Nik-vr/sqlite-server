@@ -1,0 +1,166 @@
+object Form1: TForm1
+  Left = 388
+  Height = 372
+  Top = 196
+  Width = 637
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
+  Caption = 'Client'
+  ClientHeight = 372
+  ClientWidth = 637
+  OnClose = FormClose
+  OnCreate = FormCreate
+  OnShow = FormShow
+  LCLVersion = '0.9.31'
+  object LogBox: TListBox
+    Left = 10
+    Height = 200
+    Top = 165
+    Width = 400
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Color = clBlack
+    Font.Height = -12
+    Font.Name = 'Courier New'
+    Font.Pitch = fpFixed
+    Font.Quality = fqDraft
+    ItemHeight = 0
+    ParentFont = False
+    TabOrder = 0
+  end
+  object ProgressBar1: TProgressBar
+    Left = 10
+    Height = 25
+    Top = 131
+    Width = 295
+    TabOrder = 1
+  end
+  object GroupBox1: TGroupBox
+    Left = 5
+    Height = 120
+    Top = 5
+    Width = 400
+    Caption = 'Параметры'
+    ClientHeight = 102
+    ClientWidth = 396
+    TabOrder = 2
+    object Label1: TLabel
+      Left = 8
+      Height = 18
+      Top = 41
+      Width = 135
+      Caption = 'Количество запросов:'
+      ParentColor = False
+    end
+    object CurrencyEdit: TCurrencyEdit
+      Left = 148
+      Height = 25
+      Top = 39
+      Width = 80
+      TabOrder = 0
+      Text = '0'
+      Value = 0
+    end
+    object IP_Edit: TEdit
+      Left = 123
+      Height = 25
+      Top = 5
+      Width = 105
+      TabOrder = 1
+      Text = '192.168.1.11'
+    end
+    object TxtEdit: TEdit
+      Left = 148
+      Height = 25
+      Top = 71
+      Width = 190
+      TabOrder = 2
+      Text = 'SELECT name FROM type_bill'
+    end
+    object Label3: TLabel
+      Left = 8
+      Height = 18
+      Top = 72
+      Width = 130
+      Caption = 'Строка для отправки:'
+      ParentColor = False
+    end
+    object Label4: TLabel
+      Left = 236
+      Height = 18
+      Top = 8
+      Width = 78
+      Caption = 'Тип запроса:'
+      ParentColor = False
+    end
+    object TypeBox: TComboBox
+      Left = 315
+      Height = 25
+      Top = 5
+      Width = 76
+      ItemHeight = 17
+      ItemIndex = 0
+      Items.Strings = (
+        'Select'
+        'Update'
+      )
+      TabOrder = 3
+      Text = 'Select'
+    end
+    object FieldEdit: TEdit
+      Left = 315
+      Height = 25
+      Top = 39
+      Width = 73
+      TabOrder = 4
+      Text = 'name'
+    end
+    object Label6: TLabel
+      Left = 279
+      Height = 18
+      Top = 41
+      Width = 35
+      Caption = 'Поле:'
+      ParentColor = False
+    end
+  end
+  object SendDataButton: TButton
+    Left = 310
+    Height = 27
+    Top = 131
+    Width = 100
+    Caption = 'Отправить'
+    OnClick = SendDataButtonClick
+    TabOrder = 3
+  end
+  object Label2: TLabel
+    Left = 16
+    Height = 18
+    Top = 30
+    Width = 108
+    Caption = 'IP-адрес сервера:'
+    ParentColor = False
+  end
+  object SelectBox: TListBox
+    Left = 420
+    Height = 335
+    Top = 30
+    Width = 210
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Color = clBlack
+    Font.Height = -12
+    Font.Name = 'Courier New'
+    Font.Pitch = fpFixed
+    Font.Quality = fqDraft
+    ItemHeight = 0
+    ParentFont = False
+    TabOrder = 4
+  end
+  object Label5: TLabel
+    Left = 420
+    Height = 18
+    Top = 5
+    Width = 127
+    Caption = 'Результаты выборки:'
+    ParentColor = False
+  end
+end
