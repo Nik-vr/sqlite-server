@@ -1,0 +1,9 @@
+object SQLiteDaemon: TSQLiteDaemon
+  OnCreate = DataModuleCreate
+  OldCreateOrder = False
+  OnStart = DataModuleStart
+  Height = 186
+  HorizontalOffset = 647
+  VerticalOffset = 291
+  Width = 360
+end
